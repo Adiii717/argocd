@@ -328,10 +328,10 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: docker.io/istio/examples-bookinfo-productpage-v1:1.16.2
+        image: nginx
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 9080
+        - containerPort: 80
         volumeMounts:
         - name: tmp
           mountPath: /tmp
